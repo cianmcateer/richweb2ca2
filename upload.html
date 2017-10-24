@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' *; img-src * data: 'unsafe-inline'">
+   <title>Complete deal - Upload</title>
+   <link rel='stylesheet' id='dazzling-bootstrap-css' href='https://cdn.colorlib.com/dazzling/wp-content/themes/dazzling/inc/css/bootstrap.min.css?ver=4.7.3' type='text/css' media='all' />
+   <link rel='stylesheet' id='dazzling-icons-css' href='https://cdn.colorlib.com/dazzling/wp-content/themes/dazzling/inc/css/font-awesome.min.css?ver=4.7.3' type='text/css' media='all' />
+   <link rel='stylesheet' id='dazzling-style-css' href='https://cdn.colorlib.com/dazzling/wp-content/themes/dazzling/style.css?ver=4.7.3' type='text/css' media='all' />
+   <link rel='stylesheet' id='jetpack_css-css' href='https://cdn.colorlib.com/dazzling/wp-content/plugins/jetpack/css/jetpack.css?ver=4.7.1' type='text/css' media='all' />
+   <link rel='stylesheet' type="text/css" href="css/index.css">
+   <link rel="stylesheet" href="font-awesome.min.css">
+   <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script src="http://maps.google.com/maps/api/js?key=AIzaSyCUhsgYFgZ3U7UCzeccL0hiY-_JmNG6f_Y" type="text/javascript"></script>
+</head>
+<body class="home blog">
+
+   <div id="page" class="hfeed site">
+      <nav class="navbar navbar-default" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <div id="logo">
+                  <span class="site-title"><a class="navbar-brand" href="https://colorlib.com/dazzling/" title="Dazzling Demo" rel="home">Complete Deal.ie</a></span>
+               </div>
+               <p class="site-description">Upload your unwanted items here for a fair price!</p>
+            </div>
+            <nav class="navbar navbar-default">
+               <div class="container-fluid">
+                   <ul class="nav navbar-nav">
+                       <li><a href="index.html">Home</a></li>
+                       <li class="active"><a href="upload.html">Upload</a></li>
+                       <li><a href="catalogue.html">Catalogue</a></li>
+                   </ul>
+               </div>
+           </nav>
+         </div>
+      </nav>
+   <body>
+      <div class="main">
+         <h1>Upload your product here</h1>
+         <br/>
+         <hr>
+         <button id = "button"><i class="fa fa-camera-retro"></button>
+         <canvas id = "canvas"></canvas>
+         <img src="" id = "image"/>
+         <form action="#" method="post" id = "fileUploadForm" enctype="multipart/form-data">
+             <input name = "userId" type="hidden" id="userId" value="">
+                 <h3>Product</h3>
+                 <input name = "name" type="text" id="name" value="">
+                     <input name="fileUpload" type="hidden" id="img" value="">
+                         <h3>Review</h3>
+                         <input name = "desc" type="text" id = "desc" value="">
+                             <h3>Price</h3>
+                             <input name = "price" type="number" id = "price" value="">
+                                 <input name="lat" type="hidden" id="lat" value="">
+                                     <input name="lng" type="hidden" id="lng" value="">
+                                         <input type='submit' id="submit" value='Submit'>
+         </form>
+         <div id='imageContainer'></div>
+         <div class="container footer-inner">
+            <div class="footer-widget-area">
+               <div class="col-sm-6 col-md-4 footer-widget" role="complementary">
+                  <div id="nav_menu-2" class="widget widget_nav_menu">
+                     <h3 class="widgettitle">Other Pages</h3>
+                     <div class="menu-short-container">
+                        <ul id="menu-short" class="menu">
+                           <li id="menu-item-1629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1629"><a href="index.html">Home</a>
+                           </li>
+                           <li id="menu-item-1761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1761"><a href="catalogue.html">Catalogue</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-4 footer-widget" role="complementary">
+               </div>
+            </div>
+         </div>
+         <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="site-info container">
+            </div>
+            <div class="scroll-to-top">
+            </div>
+         </footer>
+      </div>
+      <script type="text/javascript" src="js/upload.js"></script>
+   </body>
+</html>
